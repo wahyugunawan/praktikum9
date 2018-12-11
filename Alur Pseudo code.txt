@@ -1,14 +1,21 @@
 Alur Pseudocudo sbb:
 
 1.Definisikan Variable yang dibutuhkan sbb:
-(variable a,i,min, data dan max )
+(variable x,n,i,k,c, bil,mod,total, modus, dan max )
 2.definisikan element array sbb:
-(for(i=0; i<a; i++))
+(for(c=0; c<n; c++))
 3.lakukan perulangan seluruh elemen array dan membandingkan nilai setiap elemen array dengan
-"if(max < data[i]) {
-max = data[i];
-}
-if (min > data[i]) {
-min = data[i];
-}"
+"if(max < bil[c]) {
+max = bil[c];
+}{
+    if(x==0)
+    mod[x]=0;
+    else
+    mod[x]=mod[x-1];
+    if(total[c]==k)
+    {if(bil[c]!=mod[x])
+    {mod[x]=bil[c];
+    x++;}
+    }
+"
 4.Output.
