@@ -2,63 +2,43 @@
 
 using namespace std;
 
-int main (){
-int matrik1[2][3];
-int matrik2[3][1];
-int matrik3[2][2];
-int temp;
+int main(){
+
+int A[10][10],b,c,baris,kolom;
 
 
-for (int x = 0;x<2;x++){
-for (int y =0;y<3;y++){
-cout <<"masukan nilai matrik A baris ke-"<<(x+1)<<" kolom ke-"<<(y+1)<<" : ";
-cin>>matrik1[x][y];
+cout<<" ==========PROGRAM TRANSPOSE MATRIKS========= "<<endl;
+cout<<"Masukan Jumlah Baris : ";
+cin>>baris;
+cout<<"Masukan Jumlah Kolom : ";
+cin>>kolom;
+cout<<endl;
+for (b=0;b<baris;b++)
+{
+for (c=0;c<kolom;c++)
+{
+cout<<"Matriks ["<<b+1<<","<<c+1<<"] = ";
+cin>>A[b][c];
 }
+}
+cout<<endl<<endl;
+cout<<"Bentuk Matriks Pertama : "<<endl<<endl;
+for (b=0;b<baris;b++)
+{
+for (c=0;c<kolom;c++)
+{
+cout<<" "<<A[b][c]<<" ";
+}
+cout<<endl<<endl;
+}
+cout<<" Hasil Matriks Transpose : "<<endl<<endl;
+for (b=0;b<kolom;b++)
+{
+for (c=0;c<baris;c++)
+{
+cout<<" "<<A[c][b]<<" ";
 }
 cout<<endl;
-
-cout<<"Nilai Matrik A :"<<endl;
-for (int x = 0;x<2;x++){
-for (int y =0;y<3;y++){
-cout <<matrik1[x][y]<<"   ";
-}
 cout<<endl;
 }
-cout<<endl;
-
-for (int x = 0;x<3;x++){
-for (int y =0;y<1;y++){
-cout <<"masukan nilai matrik B baris ke-"<<(x+1)<<" kolom ke-"<<(y+1)<<" : ";
-cin>>matrik2[x][y];
-}
-}
-cout<<endl;
-
-cout<<"Nilai Matrik B :"<<endl;
-for (int x = 0;x<3;x++){
-for (int y =0;y<1;y++){
-cout <<matrik2[x][y]<<"   ";
-}
-cout<<endl;
-}
-
-for (int x = 0;x<3;x++){
-for (int y =0;y<1;y++){
-matrik3[x][y]=0;
-for (int z =0;z<3;z++){
-temp=matrik1[x][z]*matrik2[z][y];
-matrik3[x][y]=matrik3[x][y]+temp;
-}
-}
-}
-
-cout<<endl;
-cout<<"Hasil perkalian matrik AxB ="<<endl;
-for (int x = 0;x<2;x++){
-for (int y =0;y<1;y++){
-cout <<matrik3[x][y]<<"   ";
-}
-cout<<endl;
-}
-    return 0;
-}
+return 0;}

@@ -1,13 +1,13 @@
 Alur Pseudocudo sbb:
 
 1.Definisikan Variable yang dibutuhkan sbb:
-(variable matrik1, matrik2, matrik3,tenp, x, y, dan z )
+(variable a,b,c, baris, dan kolom )
 2.definisikan element matrik untuk membentuk baris dan kolom sbb:
-matrik1[2][3];
-(for(x=0; x<n; x++)
-(for(y=0; y<n; y++)
-3.melakukan proses perkalian seluruh elemen matrik antara baris dan kolom
-"temp=matrik1[x][z]*matrik2[z][y];
-matrik3[x][y]=matrik3[x][y]+temp;
+for (b=0;b<baris;b++)
+for (c=0;c<kolom;c++)
+3.melakukan proses tranpose seluruh elemen matrik antara baris dan kolom
+"cout<<" "<<A[b][c]<<" ";
+ menjadi
+ cout<<" "<<A[c][b]<<" ";
 "
 4.Output.
