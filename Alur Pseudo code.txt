@@ -1,0 +1,14 @@
+Alur Pseudocudo sbb:
+
+1.Definisikan Variable yang dibutuhkan sbb:
+(variable a,i,min, data dan max )
+2.definisikan element array sbb:
+(for(i=0; i<a; i++))
+3.lakukan perulangan seluruh elemen array dan membandingkan nilai setiap elemen array dengan
+"if(max < data[i]) {
+max = data[i];
+}
+if (min > data[i]) {
+min = data[i];
+}"
+4.Output.
