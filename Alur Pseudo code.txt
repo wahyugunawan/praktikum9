@@ -1,21 +1,13 @@
 Alur Pseudocudo sbb:
 
 1.Definisikan Variable yang dibutuhkan sbb:
-(variable x,n,i,k,c, bil,mod,total, modus, dan max )
-2.definisikan element array sbb:
-(for(c=0; c<n; c++))
-3.lakukan perulangan seluruh elemen array dan membandingkan nilai setiap elemen array dengan
-"if(max < bil[c]) {
-max = bil[c];
-}{
-    if(x==0)
-    mod[x]=0;
-    else
-    mod[x]=mod[x-1];
-    if(total[c]==k)
-    {if(bil[c]!=mod[x])
-    {mod[x]=bil[c];
-    x++;}
-    }
+(variable matrik1, matrik2, matrik3,tenp, x, y, dan z )
+2.definisikan element matrik untuk membentuk baris dan kolom sbb:
+matrik1[2][3];
+(for(x=0; x<n; x++)
+(for(y=0; y<n; y++)
+3.melakukan proses perkalian seluruh elemen matrik antara baris dan kolom
+"temp=matrik1[x][z]*matrik2[z][y];
+matrik3[x][y]=matrik3[x][y]+temp;
 "
 4.Output.
